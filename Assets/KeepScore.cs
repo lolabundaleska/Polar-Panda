@@ -14,11 +14,14 @@ public class KeepScore : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
-    void ScoreUpdate()
+    private void Update()
     {
-       
-        score++
+        if (Input.GetButtonDown("Jump"))
+        {
+
+            score++;
+            scoreText.text = "Score: " + score;
+
+        }
     }
 }
-
-  
