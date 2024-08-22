@@ -51,7 +51,7 @@ public class QuizManager : MonoBehaviour
     {
         //when you answer wrong
         QnA.RemoveAt(currentQuestion);
-        generateQuestion();
+        GameOver();
     }
 
     void SetAnswers()
