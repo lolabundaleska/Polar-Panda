@@ -13,6 +13,7 @@ public class QuizManager : MonoBehaviour
 
     public GameObject Quizpanel;
     public GameObject GOPanel;
+    public GameObject LQPanel;
 
     public TextMeshProUGUI QuestionTxt;
     public TextMeshProUGUI ScoreTxt;
@@ -24,6 +25,7 @@ public class QuizManager : MonoBehaviour
     {
         totalQuestions = QnA.Count;
         GOPanel.SetActive(false);
+        LQPanel.SetActive(false);
         generateQuestion();
     }
 
@@ -32,13 +34,25 @@ public class QuizManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void lastQ()
+    {
+        GameOver();
+    }
+
     void GameOver()
     {
         Quizpanel.SetActive(false);
         GOPanel.SetActive(true);
+        LQPanel.SetActive(false);
         ScoreTxt.text = score + "/" + totalQuestions;
     }
 
+    void LastQuestion()
+    {
+        Quizpanel.SetActive(false);
+        GOPanel.SetActive(false);
+        LQPanel.SetActive(true);
+    }
     public void correct()
     {
         //when you are right
@@ -53,6 +67,7 @@ public class QuizManager : MonoBehaviour
         QnA.RemoveAt(currentQuestion);
         GameOver();
     }
+
 
     void SetAnswers()
     {
@@ -70,7 +85,7 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
-        if (QnA.Count > 0)
+        if (score < 2 && QnA.Count > 0)
         {
             currentQuestion = Random.Range(0, QnA.Count);
 
@@ -79,9 +94,10 @@ public class QuizManager : MonoBehaviour
         }
         else 
         {
-            Debug.Log("You Failed");
-            GameOver();
+            Debug.Log("you reached 3 points");
+            LastQuestion();
         }
+    
             
 
     }
