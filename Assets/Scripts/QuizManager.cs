@@ -85,7 +85,7 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
-        if (score < 2 && QnA.Count > 0)
+        if (score < 29 && QnA.Count > 0)
         {
             currentQuestion = Random.Range(0, QnA.Count);
 
