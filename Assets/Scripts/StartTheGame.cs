@@ -23,6 +23,7 @@ public class StartTheGame : MonoBehaviour
     void TaskOnClick()
     {
         username = inputField.GetComponent<TMP_InputField>().text;   //for username
+        PlayerInfo.username = username;
         Debug.Log("Input text: " + username);  
 
         Debug.Log("You have clicked the button!");     //for new scene

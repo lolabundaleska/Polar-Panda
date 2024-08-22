@@ -18,6 +18,9 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI QuestionTxt;
     public TextMeshProUGUI ScoreTxt;
 
+
+    string username = PlayerInfo.username; //for displaying score
+
     int totalQuestions = 0;
     public int score;
 
@@ -45,7 +48,8 @@ public class QuizManager : MonoBehaviour
         Quizpanel.SetActive(false);
         GOPanel.SetActive(true);
         LQPanel.SetActive(false);
-        ScoreTxt.text = score + "/" + totalQuestions;
+
+        ScoreTxt.text =  username + " scored " + score + " points"; // + "/" + totalQuestions;
     }
 
     void LastQuestion()
