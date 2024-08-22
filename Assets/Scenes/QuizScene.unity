@@ -812,17 +812,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Question: Is this the right answer?
+  - Question: 'Who is the president of the North Pole? '
     Answers:
-    - Yes
-    - No
-    - No
+    - Santa Clause
+    - Donald Trump
+    - Putin
     CorrectAnswer: 1
-  - Question: Is this the right answer?
+  - Question: Who are our famous residents?
     Answers:
-    - Yes
-    - No
-    - No
+    - Hitler & Stalin
+    - Leonardo Dicaprio & Brad Pitt
+    - Donald Trump & Biden
+    CorrectAnswer: 1
+  - Question: Who is our enemy?
+    Answers:
+    - Deer
+    - Penguins
+    - Seals
+    CorrectAnswer: 2
+  - Question: What is our formal language?
+    Answers:
+    - "\u2661\u2606\u263E"
+    - "\u263E\u2661\u2606"
+    - "\u2606\u263E\u2667"
+    CorrectAnswer: 2
+  - Question: What is the area of the North Pole?
+    Answers:
+    - "232 km\xB2"
+    - "200 km\xB2"
+    - "263 km\xB2"
+    CorrectAnswer: 3
+  - Question: Where are the bunnies in the pyramid of hierarchy?
+    Answers:
+    - at the bottom
+    - at the top
+    - in the middle
     CorrectAnswer: 1
   options:
   - {fileID: 1002903737}
@@ -1518,7 +1542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2, y: -3}
+  m_AnchoredPosition: {x: -1.9999695, y: -3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047603234
