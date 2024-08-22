@@ -31,7 +31,8 @@ public class QuizManager : MonoBehaviour
 
     public void retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("LearningScene"); //when you fail it loads a LearningScene instead of starting the quiz again
     }
 
     public void lastQ()
