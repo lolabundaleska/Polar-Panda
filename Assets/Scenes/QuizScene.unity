@@ -811,8 +811,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c46c996ce0fb3104c8a862ccc9761d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QnA: []
-  options: []
+  QnA:
+  - Question: Is this the right answer?
+    Answers:
+    - Yes
+    - No
+    - No
+    CorrectAnswer: 1
+  - Question: Is this the right answer?
+    Answers:
+    - Yes
+    - No
+    - No
+    CorrectAnswer: 1
+  options:
+  - {fileID: 1002903737}
+  - {fileID: 47441311}
+  - {fileID: 1707667515}
   currentQuestion: 0
   Quizpanel: {fileID: 1479290924}
   GOPanel: {fileID: 343683324}
