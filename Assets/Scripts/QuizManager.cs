@@ -19,6 +19,9 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI QuestionTxt;
     public TextMeshProUGUI ScoreTxt;
 
+    public TextMeshProUGUI TriesText;
+
+
 
     string username = PlayerInfo.username; //for displaying score
 
@@ -29,6 +32,9 @@ public class QuizManager : MonoBehaviour
     //sounds
     [SerializeField] AudioSource backgroundMusic;
     [SerializeField] AudioSource correctSound;
+    [SerializeField] AudioSource wrongSound;
+    [SerializeField] AudioSource gameoverSound;
+
 
     private void Start()
     {
@@ -37,12 +43,14 @@ public class QuizManager : MonoBehaviour
         LQPanel.SetActive(false);
         generateQuestion();
 
+        TriesText.text = "Number of tries: " + PlayerInfo.numberOfTries;
 
     }
 
     public void retry()
     {
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PlayerInfo.numberOfTries++;
         SceneManager.LoadScene("LearningScene"); //when you fail it loads a LearningScene instead of starting the quiz again
     }
 
@@ -53,6 +61,8 @@ public class QuizManager : MonoBehaviour
 
     void GameOver()
     {
+        backgroundMusic.Pause();
+        gameoverSound.Play();
         Quizpanel.SetActive(false);
         GOPanel.SetActive(true);
         LQPanel.SetActive(false);
@@ -70,17 +80,18 @@ public class QuizManager : MonoBehaviour
     {
         //when you are right
         score += 1;
-        backgroundMusic.Pause();
         correctSound.Play();
         //add sound
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
-        backgroundMusic.Play(); 
     }
 
     public void wrong()
     {
         //when you answer wrong
+        wrongSound.Play();
+
+
         QnA.RemoveAt(currentQuestion);
         GameOver();
     }

@@ -18,6 +18,7 @@ public class StartTheGame : MonoBehaviour
     {
         Button btn = startButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
+        PlayerInfo.numberOfTries = 1;
     }
 
     void TaskOnClick()
