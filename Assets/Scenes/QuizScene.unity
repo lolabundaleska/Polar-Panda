@@ -1501,18 +1501,138 @@ MonoBehaviour:
     - Louis Althusser
     - Jacques Lacan
     CorrectAnswer: 3
+  - Question: How many countries are there in the world?
+    Answers:
+    - 195
+    - 193
+    - 159
+    CorrectAnswer: 1
   - Question: "Which Bront\xEB wrote the Tenant of Wildfell Hall?"
     Answers:
     - "Charlotte Bront\xEB"
     - "Emily Bront\xEB"
     - "Anne Bront\xEB"
     CorrectAnswer: 3
-  - Question: 
+  - Question: You can't buy Coca-cola in ____.
     Answers:
-    - "Charlotte Bront\xEB"
-    - "Emily Bront\xEB"
-    - "Anne Bront\xEB"
+    - Angora
+    - Cuba
+    - Iran
+    CorrectAnswer: 2
+  - Question: What is the capital of Singapore?
+    Answers:
+    - Singapore
+    - Kuala Lump
+    - Taipei
+    CorrectAnswer: 1
+  - Question: Which animal is known to have the longest lifespan?
+    Answers:
+    - Blue whale
+    - Tortoise
+    - Elephant
+    CorrectAnswer: 2
+  - Question: What is the chemical symbol of gold?
+    Answers:
+    - Ag
+    - An
+    - Au
     CorrectAnswer: 3
+  - Question: What element forms the majority of the earth's atmosphere?
+    Answers:
+    - Oxygen
+    - Hydrogen
+    - Nitrogen
+    CorrectAnswer: 3
+  - Question: When was the first iPhone made?
+    Answers:
+    - 2006
+    - 2007
+    - 2005
+    CorrectAnswer: 2
+  - Question: What orbits the nucleus of an atom?
+    Answers:
+    - Protons
+    - Electrons
+    - Neutrons
+    CorrectAnswer: 2
+  - Question: What is the largest desert in the world?
+    Answers:
+    - Sahara
+    - Antartica
+    - Arabian
+    CorrectAnswer: 2
+  - Question: What part of the human body heals the fastest?
+    Answers:
+    - skin
+    - bone
+    - tongue
+    CorrectAnswer: 3
+  - Question: How many human blood types are there?
+    Answers:
+    - 4
+    - 8
+    - 10
+    CorrectAnswer: 1
+  - Question: What is the rarest human blood type?
+    Answers:
+    - O+
+    - AB-
+    - AB+
+    CorrectAnswer: 3
+  - Question: Which number is bigger 5^22 or 3^33
+    Answers:
+    - they are the same
+    - 5^22
+    - 3^33
+    CorrectAnswer: 3
+  - Question: What is the biggest animal in the world?
+    Answers:
+    - Blue Whale
+    - You
+    - Dinosaur
+    CorrectAnswer: 1
+  - Question: What is the fear of clowns called?
+    Answers:
+    - Thlassophobia
+    - Caulrophobia
+    - Chronophobia
+    CorrectAnswer: 2
+  - Question: If there are 12 fish and half of them drown, how many are left?
+    Answers:
+    - 0
+    - 6
+    - 12
+    CorrectAnswer: 3
+  - Question: What is the value of 10% of 470?
+    Answers:
+    - 4.7
+    - 0.47
+    - 47
+    CorrectAnswer: 3
+  - Question: What is the value of X in 4x+6=18
+    Answers:
+    - 4
+    - 3
+    - 2
+    CorrectAnswer: 2
+  - Question: How many seconds are there in ten hours?
+    Answers:
+    - 36000
+    - 360000
+    - 3600000
+    CorrectAnswer: 1
+  - Question: What is the total number of degrees in a triangle?
+    Answers:
+    - 360
+    - 90
+    - 180
+    CorrectAnswer: 3
+  - Question: Who is the author of encoding/decoding model?
+    Answers:
+    - Alan Turing
+    - Stuart Hall
+    - James Gosling
+    CorrectAnswer: 2
   options:
   - {fileID: 1002903737}
   - {fileID: 47441311}
