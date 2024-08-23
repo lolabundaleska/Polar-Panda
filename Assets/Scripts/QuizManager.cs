@@ -118,7 +118,8 @@ public class QuizManager : MonoBehaviour
     {
         if (score < 60 && QnA.Count > 0)
         {
-            CurrentScore.text = "Correctly answered: " + score;
+            CurrentScore.text = "Correctly answered: " + score
+                ;
 
 
             currentQuestion = Random.Range(0, QnA.Count);
