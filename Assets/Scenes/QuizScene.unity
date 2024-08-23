@@ -1419,9 +1419,9 @@ MonoBehaviour:
     CorrectAnswer: 1
   - Question: What is velocity equal to?
     Answers:
-    - V = d/t
-    - V = t/d
-    - V = d*t
+    - V = dx/dt
+    - V = dt/dx
+    - V = dx*dt
     CorrectAnswer: 1
   - Question: What is the term for a period of time lasting one thousand years?
     Answers:
@@ -1446,6 +1446,30 @@ MonoBehaviour:
     - 144
     - 121
     - 122
+    CorrectAnswer: 1
+  - Question: What does c in CERN stands for?
+    Answers:
+    - Consiel
+    - Speed of light
+    - Center
+    CorrectAnswer: 1
+  - Question: What is the heaviest stable atom?
+    Answers:
+    - Carbon
+    - Iron
+    - Lead
+    CorrectAnswer: 3
+  - Question: Why is 6 afraid of 7
+    Answers:
+    - 123
+    - 456
+    - 789
+    CorrectAnswer: 3
+  - Question: 
+    Answers:
+    - 
+    - 
+    - 789
     CorrectAnswer: 1
   options:
   - {fileID: 1002903737}
