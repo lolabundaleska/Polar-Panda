@@ -102,7 +102,7 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
-        if (score < 29 && QnA.Count > 0)
+        if (score < 60 && QnA.Count > 0)
         {
             currentQuestion = Random.Range(0, QnA.Count);
 
@@ -111,7 +111,7 @@ public class QuizManager : MonoBehaviour
         }
         else 
         {
-            Debug.Log("you reached 3 points");
+            Debug.Log("you reached 60 points");
             LastQuestion();
         }
     
