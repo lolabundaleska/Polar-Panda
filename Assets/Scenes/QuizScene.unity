@@ -1447,7 +1447,7 @@ MonoBehaviour:
     - 121
     - 122
     CorrectAnswer: 1
-  - Question: What does c in CERN stands for?
+  - Question: What does the "C" in CERN stands for?
     Answers:
     - Consiel
     - Speed of light
@@ -1465,12 +1465,6 @@ MonoBehaviour:
     - 456
     - 789
     CorrectAnswer: 3
-  - Question: 
-    Answers:
-    - 
-    - 
-    - 789
-    CorrectAnswer: 1
   options:
   - {fileID: 1002903737}
   - {fileID: 47441311}
