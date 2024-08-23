@@ -1706,7 +1706,7 @@ MonoBehaviour:
     - O+
     - AB-
     - AB+
-    CorrectAnswer: 3
+    CorrectAnswer: 2
   - Question: Which number is bigger 5^22 or 3^33
     Answers:
     - they are the same
