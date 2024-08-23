@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class QuizManager : MonoBehaviour
 {
@@ -24,12 +25,19 @@ public class QuizManager : MonoBehaviour
     int totalQuestions = 0;
     public int score;
 
+
+    //sounds
+    [SerializeField] AudioSource backgroundMusic;
+    [SerializeField] AudioSource correctSound;
+
     private void Start()
     {
         totalQuestions = QnA.Count;
         GOPanel.SetActive(false);
         LQPanel.SetActive(false);
         generateQuestion();
+
+
     }
 
     public void retry()
@@ -62,8 +70,12 @@ public class QuizManager : MonoBehaviour
     {
         //when you are right
         score += 1;
+        backgroundMusic.Pause();
+        correctSound.Play();
+        //add sound
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
+        backgroundMusic.Play(); 
     }
 
     public void wrong()
