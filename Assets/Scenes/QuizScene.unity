@@ -1465,6 +1465,54 @@ MonoBehaviour:
     - 456
     - 789
     CorrectAnswer: 3
+  - Question: Assuming the mind of a video game character when playing them is called...
+    Answers:
+    - Depersonalisation
+    - Interpellation
+    - Interpassivity
+    CorrectAnswer: 2
+  - Question: What's the temperature in the North Pole today?
+    Answers:
+    - -40C
+    - -50C
+    - -60C
+    CorrectAnswer: 1
+  - Question: Engels wrote...
+    Answers:
+    - The Housing Question
+    - The Housing Manifesto
+    - The Housing Argument
+    CorrectAnswer: 1
+  - Question: Who is an expressionist?
+    Answers:
+    - V. van Gogh
+    - C. Monet
+    - E. Munch
+    CorrectAnswer: 3
+  - Question: Who is the Muse of epic poetry?
+    Answers:
+    - Calliope
+    - Melpomene
+    - Thalia
+    CorrectAnswer: 1
+  - Question: Who developed the theory of the mirror stage?
+    Answers:
+    - Sigmund Freud
+    - Louis Althusser
+    - Jacques Lacan
+    CorrectAnswer: 3
+  - Question: "Which Bront\xEB wrote the Tenant of Wildfell Hall?"
+    Answers:
+    - "Charlotte Bront\xEB"
+    - "Emily Bront\xEB"
+    - "Anne Bront\xEB"
+    CorrectAnswer: 3
+  - Question: 
+    Answers:
+    - "Charlotte Bront\xEB"
+    - "Emily Bront\xEB"
+    - "Anne Bront\xEB"
+    CorrectAnswer: 3
   options:
   - {fileID: 1002903737}
   - {fileID: 47441311}
