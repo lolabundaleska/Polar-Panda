@@ -21,6 +21,9 @@ public class QuizManager : MonoBehaviour
 
     public TextMeshProUGUI TriesText;
 
+    public TextMeshProUGUI CurrentScore;
+
+
 
 
     string username = PlayerInfo.username; //for displaying score
@@ -115,6 +118,9 @@ public class QuizManager : MonoBehaviour
     {
         if (score < 60 && QnA.Count > 0)
         {
+            CurrentScore.text = "Correctly answered: " + score;
+
+
             currentQuestion = Random.Range(0, QnA.Count);
 
             QuestionTxt.text = QnA[currentQuestion].Question;
